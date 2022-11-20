@@ -13,8 +13,8 @@ A template for a photo journal website.
 1. Download the files.
 1. Add your images to the images folder.
 1. Adjust your hero image and text.
-  * Lines 11-15 of the HTML file.
-  * Lines 42-59 of the CSS file.
+  1. Lines 11-15 of the HTML file.
+  1. Lines 42-59 of the CSS file.
 1. Add your images and alt text to the gallery.
   * Lines 25-35 of the HTML file.
   * Lines 76-84 of the CSS file.
