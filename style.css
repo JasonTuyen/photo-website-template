@@ -1,0 +1,135 @@
+/*
+COMMON BREAKPOINTS
+320-480 MOBILE
+481-768 TABLET
+769-1024 LAPTOP
+1025-1200 DESKTOP
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+CHANGE THE GRID LAYOUT FOR THE ABOVE IF NECCESSARY NO NEED
+TO CHANGE THE FONT SIZES
+*/
+
+body{
+    margin:0 auto;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.wrapper {
+    background-color: white;
+    max-width: 73.125rem;       /*1170px based on 16px default*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Hero Image*/
+.introduction {
+    width: 100vw;
+    height: 100vh;
+    
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*Text Styles*/
+    text-align: center;
+    
+    /*Background Styles*/
+    /*Hero Image*/
+    background-image: linear-gradient(rgba(155, 155, 155, 0.5),rgba(155, 155, 155, 0.5)), url("images/HeroLayout.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Gallery Layout*/
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    align-items: center;
+    grid-template-areas: 
+        "item1 item2 item3"
+        "item4 item5 item6"
+        "item7 item8 item9";
+    grid-gap: 1.25rem;
+    padding: 3rem;
+}
+
+/*Items in Gallery*/
+.item1  { grid-area: item1; }
+.item2  { grid-area: item2; }
+.item3  { grid-area: item3; }
+.item4  { grid-area: item4; }
+.item5  { grid-area: item5; }
+.item6  { grid-area: item6; }
+.item7  { grid-area: item7; }
+.item8  { grid-area: item8; }
+.item9  { grid-area: item9; }
+
+/*The Modal (background)*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    padding-top: 6rem; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/*Modal Content*/
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 43.75rem;
+}
+
+/*Caption of Modal*/
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 50rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.625rem 0;
+    height: 9.375rem;
+}
+
+/*Close Button*/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: rgb(49, 49, 49);
+    cursor: pointer;
+}
